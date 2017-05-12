@@ -20,21 +20,21 @@ function increaseRankBy(n){
     }
   }
 }
-/* increases the ranks in all of the .ranked-lists by n.
+/* Increases the ranks in all of the .ranked-lists by n.
 (You might need to make use of parseInt() */
 
 function deepestChild() {
   let node = document.getElementById('grand-node')
   let nextNode = node.children[0]
 
-  while (nextNode) {
+  while (nextNode) { /* while there is a nextNode available select it */
     node = nextNode
     nextNode = node.children[0]
   }
 
   return node
 }
- /* that pulls out the most deeply nested child from div#grand-node.
+ /* Pulls out the most deeply nested child from div#grand-node.
  (Remember, you can iterate over elements and call querySelector() and
  querySelectorAll() on them. This is challenging to implement correctly,
  but not beyond your ability!) */
